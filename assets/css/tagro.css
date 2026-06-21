@@ -22,9 +22,4 @@ footer.site-footer{border-top:1px solid var(--line);padding:36px 22px;background
     border-radius: 18px;
     border: 1px solid var(--line);
 }
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 18px;
-    border: 1px solid var(--line);
-}
+    
