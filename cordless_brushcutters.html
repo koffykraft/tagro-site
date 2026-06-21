@@ -4,30 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Cordless Brushcutters | Thumpassery Agro</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; padding: 20px; color: #333; max-width: 1000px; margin: auto; }
-        
-        /* Removed borders from sections */
-        .system-section { margin-bottom: 40px; padding: 10px 0; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 20px; }
-        
-        /* Minimalist card style: removed border and background */
-        .card { text-align: center; }
-        .card img { max-width: 100%; height: auto; transition: 0.3s; }
-        .card img:hover { transform: scale(1.02); }
-        
-        .btn { display: inline-block; background: #f98e2b; color: #fff; padding: 8px 20px; text-decoration: none; border-radius: 20px; margin-top: 10px; font-size: 0.9em; font-weight: 600; }
+   <style>
+    /* ... keep your other styles ... */
+    
+    .footer-logos { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 20px; 
+        margin-bottom: 20px; 
+    }
+    
+    /* Target your logo specifically */
+    .logo-tagro { height: 45px; width: auto; } /* Increased height */
+    .logo-stihl { height: 35px; width: auto; }
+</style>
 
-        /* Elegant Footer */
-        footer { margin-top: 60px; padding: 40px 20px; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 0.9em; }
-        .footer-logos { margin-bottom: 20px; opacity: 0.8; }
-        .footer-logos img { height: 35px; margin: 0 15px; }
-        footer h3 { color: #333; font-weight: 600; margin-bottom: 5px; }
-        footer p { margin: 5px 0; }
-        footer a { color: #f98e2b; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-    </style>
 </head>
 <body>
 
@@ -74,22 +66,25 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer-logos">
-            <img src="assets/logos/tagrologo.png" alt="Thumpassery Agro">
-            <img src="assets/logos/stihllogo.png" alt="STIHL">
-        </div>
-        <h3>THUMPASSERY AGRO</h3>
-        <p>Main Road, Karavaloor, Punalur, Kollam, Kerala - 691 333</p>
-        <p>Authorized Servicing Dealer</p>
-        <p style="margin-top: 15px;">Branches: 
-            <a href="https://maps.app.goo.gl/EhdrfnJss2hq3peC7?g_st=ic">Ponkunnam</a> | 
-            <a href="https://maps.app.goo.gl/axHC7LvYKkLjFSQ56?g_st=ic">Nedumangad</a> | 
-            <a href="https://maps.app.goo.gl/foitRSFxy4ANfPM2A?g_st=ic">Marthandam</a> | 
-            <a href="https://maps.app.goo.gl/kcvZYAN46XBoKjn86?g_st=ic">Shencottai</a> | 
-            <a href="https://maps.app.goo.gl/C84nDgchJg9w96X7A?g_st=ic">Oyoor</a>
-        </p>
-    </footer>
+   <footer style="margin-top: 60px; padding: 40px 20px; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 0.9em;">
+    <div class="footer-logos">
+        <!-- Added specific classes here -->
+        <img src="assets/logos/tagrologo.png" class="logo-tagro" alt="Thumpassery Agro">
+        <img src="assets/logos/stihllogo.png" class="logo-stihl" alt="STIHL">
+    </div>
+    
+    <h3>THUMPASSERY AGRO</h3>
+    <p>Main Road, Karavaloor, Punalur, Kollam, Kerala - 691 333</p>
+    <p>Authorized Servicing Dealer</p>
+    <p style="margin-top: 15px;">Branches: 
+        <a href="https://maps.google.com/?q=Ponkunnam">Ponkunnam</a> | 
+        <a href="https://maps.google.com/?q=Nedumangad">Nedumangad</a> | 
+        <a href="https://maps.google.com/?q=Marthandam">Marthandam</a> | 
+        <a href="https://maps.google.com/?q=Shencottai">Shencottai</a> | 
+        <a href="https://maps.google.com/?q=Oyoor">Oyoor</a>
+    </p>
+</footer>
+
 
 </body>
 </html>
