@@ -1,264 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STIHL Cordless Brushcutters | Thumpassery Agro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STIHL Cordless Brushcutters | Thumpassery Agro</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #2b2b2b;
-      background: #ffffff;
-    }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
 
-    .page {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 28px 18px;
-    }
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 36px;
-    }
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tagro-logo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 15px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.system-section {
+    margin: 50px 0;
+    padding-top: 30px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.system-section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.03);
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.btn {
+    display: inline-block;
+    background: #f58220;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.92;
+}
+
+.note {
+    margin-top: 40px;
+    padding: 18px;
+    background: #f8f8f8;
+    border-left: 4px solid #f58220;
+}
+
+footer {
+    margin-top: 70px;
+    padding: 40px 20px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-tagro-logo {
+    max-width: 220px;
+    height: auto;
+}
+
+.footer-stihl-logo {
+    max-width: 140px;
+    height: auto;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+.branches {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
 
     .tagro-logo {
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.15;
-      margin: 0 0 10px;
-    }
-
-    .intro {
-      max-width: 680px;
-      margin: 0 auto;
-      color: #555;
-      font-size: 1.05rem;
-    }
-
-    .system-section {
-      margin: 42px 0;
-      padding-top: 24px;
-      border-top: 1px solid #e5e5e5;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin: 0 0 18px;
-      color: #1f1f1f;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 28px;
-    }
-
-    .card {
-      text-align: center;
-      border: 1px solid #eeeeee;
-      border-radius: 16px;
-      padding: 22px 18px;
-      background: #fff;
+        max-width: 300px;
     }
 
     .card img {
-    width: 100%;
-    max-width: 380px;
-    height: 380px;
-    object-fit: contain;
-    transition: transform 0.25s ease;
-}
-    }
-
-    .card img:hover {
-      transform: scale(1.03);
+        height: 340px;
     }
 
     .card h3 {
-      margin: 14px 0 10px;
-      font-size: 1.25rem;
+        font-size: 1.8rem;
     }
 
     .btn {
-      display: inline-block;
-      background: #f58220;
-      color: #ffffff;
-      padding: 9px 22px;
-      text-decoration: none;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 0.95rem;
+        width: 100%;
+        max-width: 260px;
     }
-
-    .note {
-      margin-top: 36px;
-      padding: 18px;
-      background: #f7f7f5;
-      border-left: 4px solid #f58220;
-      color: #444;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 34px 18px;
-      border-top: 1px solid #e5e5e5;
-      text-align: center;
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    .footer-logos {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 28px;
-      margin-bottom: 18px;
-      flex-wrap: wrap;
-    }
-
-    .footer-tagro-logo {
-      max-width: 220px;
-      height: auto;
-    }
-
-    .footer-stihl-logo {
-      max-width: 120px;
-      height: auto;
-    }
-
-    footer h3 {
-      color: #222;
-      margin: 8px 0 6px;
-      letter-spacing: 0.04em;
-    }
-
-    footer p {
-      margin: 4px 0;
-    }
-
-    .branches {
-      margin-top: 14px;
-    }
-
-    .branches a {
-      color: #f58220;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0 4px;
-    }
-
-    @media (max-width: 600px) {
-      .page {
-        padding: 22px 14px;
-      }
-
-      .card img {
-        height: 200px;
-      }
-
-      .footer-logos {
-        gap: 18px;
-      }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
-  <main class="page">
 
-    <header>
-      <img src="assets/logos/tagrologo.png" class="tagro-logo" alt="Thumpassery Agro logo">
-      <h1>STIHL Cordless Brushcutter Range</h1>
-      <p class="intro">
-        Cordless brushcutters for garden maintenance, grass trimming and professional clearing work.
-        Images open the official STIHL India product pages. Specifications open TAGRO's own reference pages.
-      </p>
-    </header>
+<div class="page">
 
-    <section class="system-section">
-      <h2>AS System</h2>
-      <div class="grid">
+<header>
+    <img src="assets/logos/tagrologo.png" alt="Thumpassery Agro" class="tagro-logo">
+
+    <h1>STIHL Cordless Brushcutters</h1>
+
+    <p class="intro">
+        Explore STIHL's cordless brushcutter range from the compact AS System through the professional AP System.
+        Product images and specification buttons open the official STIHL India product pages.
+    </p>
+</header>
+
+<section class="system-section">
+    <h2>AS System</h2>
+
+    <div class="grid">
         <div class="card">
-          <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-30-186896">
-            <img src="assets/images/stihl/fsa30lodef.jpg" alt="STIHL FSA 30 cordless brushcutter">
-          </a>
-          <h3>FSA 30</h3>
-          <a href="fsa30-specs.html" class="btn">View Specs</a>
-        </div>
-      </div>
-    </section>
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-30-186896" target="_blank">
+                <img src="assets/images/stihl/fsa30lodef.jpg" alt="STIHL FSA 30">
+            </a>
 
-    <section class="system-section">
-      <h2>AK System</h2>
-      <div class="grid">
-        <div class="card">
-          <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-57-ak-system-107762">
-            <img src="assets/images/stihl/fsa57lodef.jpg" alt="STIHL FSA 57 cordless brushcutter">
-          </a>
-          <h3>FSA 57</h3>
-          <a href="fsa57-specs.html" class="btn">View Specs</a>
-        </div>
-      </div>
-    </section>
+            <h3>FSA 30</h3>
 
-    <section class="system-section">
-      <h2>AP System</h2>
-      <div class="grid">
-        <div class="card">
-          <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-135-cordless-trimmer-126162">
-            <img src="assets/images/stihl/fsa135lodef.jpg" alt="STIHL FSA 135 cordless brushcutter">
-          </a>
-          <h3>FSA 135</h3>
-          <a href="fsa135-specs.html" class="btn">View Specs</a>
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-30-186896" target="_blank" class="btn">
+                Official Specs
+            </a>
         </div>
-
-        <div class="card">
-          <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-200-cordless-brushcutter-1013109">
-            <img src="assets/images/stihl/fsa200lodef.jpg" alt="STIHL FSA 200 cordless brushcutter">
-          </a>
-          <h3>FSA 200</h3>
-          <a href="fsa200-specs.html" class="btn">View Specs</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="note">
-      For availability, battery compatibility and current pricing, contact Thumpassery Agro before ordering.
     </div>
+</section>
 
-  </main>
+<section class="system-section">
+    <h2>AK System</h2>
 
-  <footer>
+    <div class="grid">
+        <div class="card">
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-57-ak-system-107762" target="_blank">
+                <img src="assets/images/stihl/fsa57lodef.jpg" alt="STIHL FSA 57">
+            </a>
+
+            <h3>FSA 57</h3>
+
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-57-ak-system-107762" target="_blank" class="btn">
+                Official Specs
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="system-section">
+    <h2>AP System</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-135-cordless-trimmer-126162" target="_blank">
+                <img src="assets/images/stihl/fsa135lodef.jpg" alt="STIHL FSA 135">
+            </a>
+
+            <h3>FSA 135</h3>
+
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-135-cordless-trimmer-126162" target="_blank" class="btn">
+                Official Specs
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-200-cordless-brushcutter-1013109" target="_blank">
+                <img src="assets/images/stihl/fsa200lodef.jpg" alt="STIHL FSA 200">
+            </a>
+
+            <h3>FSA 200</h3>
+
+            <a href="https://www.stihl.in/en/p/brushcutters-grass-trimmers-clearing-saws-fsa-200-cordless-brushcutter-1013109" target="_blank" class="btn">
+                Official Specs
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<div class="note">
+    For pricing, battery compatibility, charger selection and availability, please contact Thumpassery Agro.
+</div>
+
+<footer>
+
     <div class="footer-logos">
-      <img src="assets/logos/tagrologo.png" class="footer-tagro-logo" alt="Thumpassery Agro logo">
-      <img src="assets/logos/stihllogo.png" class="footer-stihl-logo" alt="STIHL logo">
+        <img src="assets/logos/tagrologo.png" alt="Thumpassery Agro" class="footer-tagro-logo">
+        <img src="assets/logos/stihllogo.png" alt="STIHL" class="footer-stihl-logo">
     </div>
 
     <h3>THUMPASSERY AGRO</h3>
-    <p>Main Road, Karavaloor, Punalur, Kollam, Kerala - 691 333</p>
-    <p>Authorized Servicing Dealer</p>
+
+    <p>Main Road, Karavaloor, Punalur, Kollam, Kerala - 691333</p>
+    <p>Authorized STIHL Servicing Dealer</p>
 
     <div class="branches">
-      Branches:
-      <a href="https://maps.google.com/?q=Ponkunnam">Ponkunnam</a> |
-      <a href="https://maps.google.com/?q=Nedumangad">Nedumangad</a> |
-      <a href="https://maps.google.com/?q=Marthandam">Marthandam</a> |
-      <a href="https://maps.google.com/?q=Shencottai">Shencottai</a> |
-      <a href="https://maps.google.com/?q=Oyoor">Oyoor</a>
+        Ponkunnam | Nedumangad | Marthandam | Shencottai | Oyoor
     </div>
-  </footer>
+
+</footer>
+
+</div>
+
 </body>
 </html>
