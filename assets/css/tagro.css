@@ -132,3 +132,32 @@ footer.site-footer{border-top:1px solid var(--line);padding:36px 22px;background
         height: 190px;
     }
 }
+/* ========================================
+   JAIN CATEGORY IMAGES
+======================================== */
+
+.jain-brand{
+    text-align:center;
+    margin:30px 0;
+}
+
+.jain-brand img{
+    max-width:240px;
+}
+
+.jain-categories{
+    display:grid;
+    gap:24px;
+}
+
+.jain-item{
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:20px;
+}
+
+.jain-item img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:14px;
+}
