@@ -23,3 +23,28 @@ footer.site-footer{border-top:1px solid var(--line);padding:36px 22px;background
     border-radius: 18px;
     border: 1px solid var(--line);
 }
+.stihl-brand{
+    text-align:center;
+    margin:30px 0;
+}
+
+.stihl-brand img{
+    max-width:220px;
+}
+
+.stihl-categories{
+    display:grid;
+    gap:24px;
+}
+
+.stihl-item{
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:20px;
+}
+
+.stihl-item img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:14px;
+}
